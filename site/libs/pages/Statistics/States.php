@@ -34,7 +34,7 @@
                 <li class="nav-item dropdown"><a href="../Statistics.php" class="nav-link dropdown bg-dark text-white" data-toggle="dropdown">Estatísticas</a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="World.php">Mundo</a>
-                        <a class="dropdown-item" href="Countries.php">Países</a>
+                        <a class="dropdown-item" href="Brazil.php">Brasil</a>
                         <a class="dropdown-item" href="States.php">Estados</a>
                         <a class="dropdown-item" href="Citys.php">Cidades</a>
                     </div>
@@ -47,12 +47,11 @@
         <div class="container-fluid">
             <div class="container shadow pt-3 pb-3 mt-3 mb-3">
                 <div class="bg-secondary text-white pt-2 pb-2">
-                    <p class="font-weight-bold text-center align-middle display-4">Países<p>
+                    <p class="font-weight-bold text-center align-middle display-4">Estados<p>
                 </div>
                 <div class="container mt-2 mb-4">
                     <form action="" method="get">
                         <div class="form-inline justify-content-end">
-                            <input type="text" class="form-control mr-2" name="country" id="country" placeholder="Digite um país">
                             <input type="text" class="form-control mr-2" name="state" id="state" placeholder="Digite um estado">
                             <select class="form-control mr-2" name="period" id="period">
                                 <option value="" selected>Selecione um período</option>
@@ -77,7 +76,9 @@
                     </form>
                 </div>
                 <div class="container mb-3">
-                    <img class="img-fluid mx-auto d-block w-75" src="..\..\Images\media-movel.png" alt="">
+                    <!-- STATISTICS -->
+                    <canvas id="statisticsStates"></canvas>
+                    <!-- END STATISTICS -->
                 </div>
             </div>
         </div>
@@ -129,8 +130,8 @@
                     <a href="World.php">
                         <p class="text-center">Mundo</p>
                     </a>
-                    <a href="Countries.php">
-                        <p class="text-center">Países</p>
+                    <a href="Brazil.php">
+                        <p class="text-center">Brasil</p>
                     </a>
                     <a href="States.php">
                         <p class="text-center">Estados</p>
@@ -142,6 +143,29 @@
             </div>
         </div>
     </footer>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <!-- STATISTICS JS -->
+    <script>
+        var ctx = document.getElementById("statisticsStates");
+
+        // Type, Data e options
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+        });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

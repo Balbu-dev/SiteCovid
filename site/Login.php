@@ -34,7 +34,7 @@
                 <li class="nav-item dropdown"><a href="libs/pages/Statistics.php" class="nav-link dropdown bg-dark text-white" data-toggle="dropdown">Estatísticas</a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="libs/pages/statistics/World.php">Mundo</a>
-                        <a class="dropdown-item" href="libs/pages/statistics/Countries.php">Países</a>
+                        <a class="dropdown-item" href="libs/pages/statistics/Brazil.php">Brasil</a>
                         <a class="dropdown-item" href="libs/pages/statistics/States.php">Estados</a>
                         <a class="dropdown-item" href="libs/pages/statistics/Citys.php">Cidades</a>
                     </div>
