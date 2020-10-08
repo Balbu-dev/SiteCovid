@@ -34,7 +34,7 @@
                 <li class="nav-item dropdown"><a href="Statistics.php" class="nav-link dropdown bg-dark text-white" data-toggle="dropdown">Estatísticas</a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="statistics/World.php">Mundo</a>
-                        <a class="dropdown-item" href="statistics/Countries.php">Países</a>
+                        <a class="dropdown-item" href="statistics/Brazil.php">Brasil</a>
                         <a class="dropdown-item" href="statistics/States.php">Estados</a>
                         <a class="dropdown-item" href="statistics/Citys.php">Cidades</a>
                     </div>
@@ -53,8 +53,11 @@
                     <div class="row mt-4 mb-4">
                         <div class="col-6">
                             <div class="card">
+                                <a href="statistics/World.php" class="stretched-link"></a>
                                 <div class="card-header">
-                                    <a href="statistics/World.php" class="stretched-link"><img class="card-img-top img-fluid" src="..\Images\media-movel-mundo.png" alt=""></a>
+                                    <!-- STATISTICS -->
+                                    <canvas id="statisticsWorld"></canvas>
+                                    <!-- END STATISTICS -->
                                 </div>
                                 <div class="card-body bg-primary">
                                     <p class="card-title text-white text-center font-weight-bold ">Mundo</p>
@@ -63,11 +66,14 @@
                         </div>
                         <div class="col-6">
                             <div class="card">
+                                <a href="statistics/Brazil.php" class="stretched-link"></a>
                                 <div class="card-header">
-                                    <a href="statistics/Countries.php" class="stretched-link"><img class="card-img-top img-fluid" src="..\Images\media-movel-brasil.png" alt=""></a>
+                                    <!-- STATISTICS -->
+                                    <canvas id="statisticsBrazil"></canvas>
+                                    <!-- END STATISTICS -->
                                 </div>
                                 <div class="card-body bg-primary">
-                                    <p class="card-title text-white text-center font-weight-bold ">Países</p>
+                                    <p class="card-title text-white text-center font-weight-bold ">Brasil</p>
                                 </div>
                             </div>
                         </div>
@@ -77,8 +83,11 @@
                     <div class="row mt-4 mb-4">
                         <div class="col-6">
                             <div class="card">
+                                <a href="statistics/States.php" class="stretched-link"></a>
                                 <div class="card-header">
-                                    <a href="statistics/States.php" class="stretched-link"><img class="card-img-top img-fluid" src="..\Images\media-movel-rs.png" alt=""></a>
+                                    <!-- STATISTICS -->
+                                    <canvas id="statisticsStates"></canvas>
+                                    <!-- END STATISTICS -->
                                 </div>
                                 <div class="card-body bg-primary">
                                     <p class="card-title text-white text-center font-weight-bold ">Estados</p>
@@ -87,8 +96,11 @@
                         </div>
                         <div class="col-6">
                             <div class="card">
+                                <a href="statistics/Citys.php" class="stretched-link"></a>
                                 <div class="card-header">
-                                    <a href="statistics/Citys.php" class="stretched-link"><img class="card-img-top img-fluid" src="..\Images\media-movel-portoalegre.png" alt=""></a>
+                                    <!-- STATISTICS -->
+                                    <canvas id="statisticsCitys"></canvas>
+                                    <!-- END STATISTICS -->
                                 </div>
                                 <div class="card-body bg-primary">
                                     <p class="card-title text-white text-center font-weight-bold ">Cidades</p>
@@ -147,8 +159,8 @@
                     <a href="statistics/World.php">
                         <p class="text-center">Mundo</p>
                     </a>
-                    <a href="statistics/Countries.php">
-                        <p class="text-center">Países</p>
+                    <a href="statistics/Brazil.php">
+                        <p class="text-center">Brasil</p>
                     </a>
                     <a href="statistics/States.php">
                         <p class="text-center">Estados</p>
@@ -160,6 +172,101 @@
             </div>
         </div>
     </footer>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <!-- STATISTICS JS -->
+    <script>
+        var ctx = document.getElementById('statisticsWorld');
+
+        // Type, Data e options
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+    <script>
+        var ctx = document.getElementById("statisticsBrazil");
+
+        // Type, Data e options
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+    <script>
+        var ctx = document.getElementById("statisticsStates");
+
+        // Type, Data e options
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+    <script>
+        var ctx = document.getElementById("statisticsCitys");
+
+        // Type, Data e options
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

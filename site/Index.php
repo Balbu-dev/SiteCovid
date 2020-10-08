@@ -42,7 +42,7 @@
                     <!-- DROPDOWN MENU -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="libs/pages/statistics/World.php">Mundo</a>
-                        <a class="dropdown-item" href="libs/pages/statistics/Countries.php">Países</a>
+                        <a class="dropdown-item" href="libs/pages/statistics/Brazil.php">Brasil</a>
                         <a class="dropdown-item" href="libs/pages/statistics/States.php">Estados</a>
                         <a class="dropdown-item" href="libs/pages/statistics/Citys.php">Cidades</a>
                     </div>
@@ -489,8 +489,8 @@
                     <a href="libs/pages/statistics/World.php">
                         <p class="text-center">Mundo</p>
                     </a>
-                    <a href="libs/pages/statistics/Countries.php">
-                        <p class="text-center">Países</p>
+                    <a href="libs/pages/statistics/Brazil.php">
+                        <p class="text-center">Brasil</p>
                     </a>
                     <a href="libs/pages/statistics/States.php">
                         <p class="text-center">Estados</p>
