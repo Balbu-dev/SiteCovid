@@ -75,12 +75,12 @@
                                     <p>Você tem ou teve Covid-19?</p>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest1" id="sim" class="form-check-input">Sim
+                                            <input type="radio" name="quest1" id="yes" class="form-check-input" value="yes">sim
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest1" id="nao" class="form-check-input">Não
+                                            <input type="radio" name="quest1" id="not" class="form-check-input" value="not">Não
                                         </label>
                                     </div>
                                 </div>
@@ -90,12 +90,12 @@
                                     <p>Conhece alguem que tem ou teve Covid-19?</p>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest2" id="sim" class="form-check-input">Sim
+                                            <input type="radio" name="quest2" id="yes" class="form-check-input" value="yes">sim
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest2" id="nao" class="form-check-input">Não
+                                            <input type="radio" name="quest2" id="not" class="form-check-input" value="not">Não
                                         </label>
                                     </div>
                                 </div>
@@ -104,35 +104,35 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="form-group">
-                                    <p>Se sim, qual a idade deles(as)? Pode marcar mais de uma opção.</p>
+                                    <p>Se yes, qual a idade deles(as)? Pode marcar mais de uma opção.</p>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest4" id="kid" class="form-check-input">Menos de 12 anos;
+                                            <input type="checkbox" name="quest3[0]" id="kid" class="form-check-input" value="kid">Menos de 12 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest4" id="teenager" class="form-check-input">Mais de 13 e menos de 18 anos;
+                                            <input type="checkbox" name="quest3[1]" id="teenager" class="form-check-input" value="teenager">Mais de 13 e menos de 18 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest4" id="young" class="form-check-input">Mais de 19 e menos de 30 anos;
+                                            <input type="checkbox" name="quest3[2]" id="young" class="form-check-input" value="young">Mais de 19 e menos de 30 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest4" id="adult" class="form-check-input">Mais de 31 e menos de 50 anos;
+                                            <input type="checkbox" name="quest3[3]" id="adult" class="form-check-input" value="adult">Mais de 31 e menos de 50 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest4" id="old" class="form-check-input"> Mais de 51 e menos de 70 anos;
+                                            <input type="checkbox" name="quest3[4]" id="old" class="form-check-input" value="old"> Mais de 51 e menos de 70 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest4" id="old-man" class="form-check-input">Mais de 71 anos;
+                                            <input type="checkbox" name="quest3[5]" id="old-man" class="form-check-input" value="old-man">Mais de 71 anos;
                                         </label>
                                     </div>
                                 </div>
@@ -143,12 +143,12 @@
                                         <p>Você já perdeu alguém por causa da Covid-19?</p>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest5" id="sim" class="form-check-input">Sim
+                                                <input type="radio" name="quest4" id="yes" class="form-check-input" value="yes">sim
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest5" id="nao" class="form-check-input">Não
+                                                <input type="radio" name="quest4" id="not" class="form-check-input" value="not">Não
                                             </label>
                                         </div>
                                     </div>
@@ -158,12 +158,12 @@
                                         <p>Você conhece alguém que está curado(a) da Covid-19?</p>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest6" id="sim" class="form-check-input">Sim
+                                                <input type="radio" name="quest5" id="yes" class="form-check-input" value="yes">sim
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest6" id="nao" class="form-check-input">Não
+                                                <input type="radio" name="quest5" id="not" class="form-check-input" value="not">Não
                                             </label>
                                         </div>
                                     </div>
