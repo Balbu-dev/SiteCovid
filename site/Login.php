@@ -50,7 +50,7 @@
                     <p class="font-weight-bold text-center align-middle display-4">Login</p>
                 </div>
                 <div class="container mt-5">
-                    <form action="" method="get">
+                    <form action="logon.php" method="get">
                         <div class="form-group">
                             <div class="form-inline row ml-3 mb-2">
                                 <label for="user" class="col justify-content-end"">Usuário:</label>

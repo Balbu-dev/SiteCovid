@@ -50,7 +50,7 @@
                     <p class="font-weight-bold text-center align-middle display-4">Pesquisa</p>
                 </div>
                 <div class="container mt-3 mb-3 w-75">
-                    <form action="" method="post" class="needs-validation" novalidate>
+                    <form action="../php/dataForm.php" method="post">
                         <div class="form-row mb-3">
                             <div class="col">
                                 <div class="form-inline">
@@ -107,32 +107,32 @@
                                     <p>Se yes, qual a idade deles(as)? Pode marcar mais de uma opção.</p>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest3[0]" id="kid" class="form-check-input" value="kid">Menos de 12 anos;
+                                            <input type="checkbox" name="quest3[]" id="kid" class="form-check-input" value="kid">Menos de 12 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest3[1]" id="teenager" class="form-check-input" value="teenager">Mais de 13 e menos de 18 anos;
+                                            <input type="checkbox" name="quest3[]" id="teenager" class="form-check-input" value="teenager">Mais de 13 e menos de 18 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest3[2]" id="young" class="form-check-input" value="young">Mais de 19 e menos de 30 anos;
+                                            <input type="checkbox" name="quest3[]" id="young" class="form-check-input" value="young">Mais de 19 e menos de 30 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest3[3]" id="adult" class="form-check-input" value="adult">Mais de 31 e menos de 50 anos;
+                                            <input type="checkbox" name="quest3[]" id="adult" class="form-check-input" value="adult">Mais de 31 e menos de 50 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest3[4]" id="old" class="form-check-input" value="old"> Mais de 51 e menos de 70 anos;
+                                            <input type="checkbox" name="quest3[]" id="old" class="form-check-input" value="old"> Mais de 51 e menos de 70 anos;
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-checkbox-label">
-                                            <input type="checkbox" name="quest3[5]" id="old-man" class="form-check-input" value="old-man">Mais de 71 anos;
+                                            <input type="checkbox" name="quest3[]" id="old-man" class="form-check-input" value="old_man">Mais de 71 anos;
                                         </label>
                                     </div>
                                 </div>
