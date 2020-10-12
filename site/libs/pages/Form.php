@@ -15,7 +15,7 @@
     <header>
         <div class="container-fluid bg-primary text-white shadow">
             <div class="container">
-                <a href="../../index.php"><img src="../images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="../../index.php"><img src="../images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -75,12 +75,12 @@
                                     <p>Você tem ou teve Covid-19?</p>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest1" id="yes" class="form-check-input" value="yes">sim
+                                            <input type="radio" name="quest1" id="yes" class="form-check-input" value="yes" required>sim
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest1" id="not" class="form-check-input" value="not">Não
+                                            <input type="radio" name="quest1" id="not" class="form-check-input" value="not" required>Não
                                         </label>
                                     </div>
                                 </div>
@@ -90,12 +90,12 @@
                                     <p>Conhece alguem que tem ou teve Covid-19?</p>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest2" id="yes" class="form-check-input" value="yes">sim
+                                            <input type="radio" name="quest2" id="yes" class="form-check-input" value="yes" required>sim
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" name="quest2" id="not" class="form-check-input" value="not">Não
+                                            <input type="radio" name="quest2" id="not" class="form-check-input" value="not" required>Não
                                         </label>
                                     </div>
                                 </div>
@@ -143,12 +143,12 @@
                                         <p>Você já perdeu alguém por causa da Covid-19?</p>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest4" id="yes" class="form-check-input" value="yes">sim
+                                                <input type="radio" name="quest4" id="yes" class="form-check-input" value="yes" required>sim
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest4" id="not" class="form-check-input" value="not">Não
+                                                <input type="radio" name="quest4" id="not" class="form-check-input" value="not" required>Não
                                             </label>
                                         </div>
                                     </div>
@@ -158,12 +158,12 @@
                                         <p>Você conhece alguém que está curado(a) da Covid-19?</p>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest5" id="yes" class="form-check-input" value="yes">sim
+                                                <input type="radio" name="quest5" id="yes" class="form-check-input" value="yes" required>sim
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
-                                                <input type="radio" name="quest5" id="not" class="form-check-input" value="not">Não
+                                                <input type="radio" name="quest5" id="not" class="form-check-input" value="not" required>Não
                                             </label>
                                         </div>
                                     </div>

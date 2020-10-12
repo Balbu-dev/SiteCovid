@@ -51,30 +51,30 @@ foreach ($quest3 as $value) {
 
 }
 
-if ($kid == "") {
+if ($kid != "yes") {
     $kid = "not";
 }
 
-if ($teenager == "") {
+if ($teenager != "yes") {
     $teenager = "not";
 }
 
-if ($young == "") {
+if ($young != "yes") {
     $young = "not";
 }
 
-if ($adult == "") {
+if ($adult != "yes") {
     $adult = "not";
 }
 
-if ($old == "") {
+if ($old != "yes") {
     $old = "not";
 }
 
-if ($old_man == "") {
+if ($old_man != "yes") {
     $old_man = "not";
 }
 
 $connetion = new Connection();
 
-$connetion = $connetion->registerForm($email, $cpf, $quest1, $quest2, $kid, $teenager, $young, $adult, $old, $old_man, $quest4, $quest5);
+$register = $connetion->registerForm($email, $cpf, $quest1, $quest2, $kid, $teenager, $young, $adult, $old, $old_man, $quest4, $quest5);

@@ -16,7 +16,7 @@
         <div class="container-fluid bg-primary text-white shadow">
 
             <div class="container">
-                <a href="../../index.php"><img src="../images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="../../index.php"><img src="../images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -51,7 +51,7 @@
                 <p class="font-weight-bold text-center align-middle display-4">Publicar Notícia</p>
             </div>
             <div class="container mt-3">
-                <form action="publishing.php" method="post" enctype="multipart/form-data">
+                <form action="../php/publishing.php" method="post" enctype="multipart/form-data">
                     <div class="form-group ml-5">
                         <div class="form-inline mb-3 ml-5">
                             <div class="form-row">
@@ -59,7 +59,7 @@
                                     <label for="title" class="mr-2 justify-content-end">Título:</label>
                                 </div>
                                 <div class="col-10">
-                                    <input type="text" name="title" id="title" class="form-control w-75">
+                                    <input type="text" name="title" id="title" class="form-control w-75" required>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                                     <label for="category" class="mr-2 justify-content-end">Categoria:</label>
                                 </div>
                                 <div class="col-10">
-                                    <select name="category" id="category" class="form-control w-75">
+                                    <select name="category" id="category" class="form-control w-75" required>
                                         <option value="animal">Animais</option>
                                         <option value="business">Finanças Empresariais</option>
                                         <option value="education">Educação</option>
@@ -87,7 +87,7 @@
                                         <label for="title" class="mr-2 justify-content-end">Imagem:</label>
                                     </div>
                                     <div class="col-10">
-                                        <input type="file" name="imgnew" class="form-control-file border w-75">
+                                        <input type="file" name="img" class="form-control-file border w-75" required>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
                                         <label for="title" class="mr-2 justify-content-end">Notícia:</label>
                                     </div>
                                     <div class="col-10">
-                                        <textarea name="new" id="new" class="form-control w-75"></textarea>
+                                        <textarea name="new" id="new" class="form-control w-75" required></textarea>
                                     </div>
                                 </div>
                             </div>

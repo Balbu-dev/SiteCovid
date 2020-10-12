@@ -4,9 +4,17 @@ require_once("class/connection.class.php");
 
 $title = $_POST['title'];
 $category = $_POST['category'];
-$imgnew = $_POST['imgnew'];
 $new = $_POST['new'];
 
+$imgname = "";
+
+if (isset($_FILES['img'])) {
+    $extension = strtolower(substr($_FILES['img']['name'], -4));
+    $imgname = md5(time()) . $extension;
+    $directory = "../images/news/";
+
+    move_uploaded_file($_FILES['img']['tmp_name'], $directory . $imgname);
+}
 $connetion = new Connection();
 
-$connetion = $connetion->registerNew($title, $imgnew, $new, $category);
+$register = $connetion->registerNew($title, $imgname, $new, $category);

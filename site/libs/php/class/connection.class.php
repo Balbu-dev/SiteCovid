@@ -121,19 +121,16 @@ class Connection
         $this->conn->close();
     }
 
-    public  function registerNew(
-        $title,
-        $imgnew,
-        $new,
-        $category
-    ) {
-        $stmt = $this->conn->prepare("INSERT INTO news 
-			(title, img, new, category)
-			VALUES(?, ?, ?, ?)");
+    public  function registerNew($title, $imgname, $new, $category)
+    {
+        $sql = "INSERT INTO news 
+        (title, img, new, category)
+        VALUES(?, ?, ?, ?)";
+        $stmt = $this->conn->prepare($sql);
         $stmt->bind_param(
-            'ssissi',
+            'ssss',
             $title,
-            $imgnew,
+            $imgname,
             $new,
             $category
         );
@@ -142,8 +139,8 @@ class Connection
 
         if ($stmt == true) {
             echo "<script language='javascript' type='text/javascript'>
-			alert('Cadastro realizado com sucesso!');
-			window.location.href='../../pages/News.php';</script>";
+			alert('$imgname');
+			window.location.href='../../libs/pages/News.php';</script>";
             return $stmt;
         } else {
             die("Falha no cadastro!");
@@ -153,25 +150,13 @@ class Connection
         $this->conn->close();
     }
 
-    public  function registerForm(
-        $email,
-        $cpf,
-        $quest1,
-        $quest2,
-        $kid,
-        $teenager,
-        $young,
-        $adult,
-        $old,
-        $old_man,
-        $quest4,
-        $quest5
-    ) {
-        $stmt = $this->conn->prepare("INSERT INTO news 
-			(email, cpf, quest1, quest2, kid, teenager, young, adult, old, old_man, quest4, quest5)
-			VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    public function registerForm($email, $cpf, $quest1, $quest2, $kid, $teenager, $young, $adult, $old, $old_man, $quest4, $quest5)
+    {
+        $sql = "INSERT INTO searchform(email, cpf, quest1, quest2, kid, teenager, young, adult, old, old_man, quest4, quest5) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
+        $stmt = $this->conn->prepare($sql);
+
         $stmt->bind_param(
-            'ssiss',
+            'sissssssssss',
             $email,
             $cpf,
             $quest1,
@@ -185,18 +170,16 @@ class Connection
             $quest4,
             $quest5
         );
-
         $stmt->execute();
 
         if ($stmt == true) {
             echo "<script language='javascript' type='text/javascript'>
 			alert('Cadastro realizado com sucesso!');
-			window.location.href='../../../Index.php';</script>";
+			window.location.href='../../libs/pages/form.php';</script>";
             return $stmt;
         } else {
             die("Falha no cadastro!");
         }
-
         $stmt->close();
         $this->conn->close();
     }
