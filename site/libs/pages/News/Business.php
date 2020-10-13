@@ -1,3 +1,12 @@
+<?php
+
+//require_once('../../php/class/connection.class.php');
+
+//$connection = new Connection();
+
+//$query = $connection->searchNewsBusiness();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -60,7 +69,7 @@
                                 <a href="PersonalCares.php"><button class="btn btn-light">Cuidados Pessoais</button></a><span class="border border-top-0 border-left-0 border-bottom-0"></span>
                                 <a href="PersonalFinances.php"><button class="btn btn-light">Finanças Pessoais</button></a>
                             </div>
-                            <form action="#" method="get">
+                            <!-- <form action="#" method="get">
                                 <div class="form-inline">
                                     <div class="form-inline ml-5">
                                         <select name="search-fpr" id="search-for" class="form-control mr-1">
@@ -76,25 +85,58 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="container pt-3 pb-3">
+                        <?php //while ($line = $query->fetch_assoc()) {
+                        //$titles = $line['title'];
+                        //$imgs = $line['img'];
+                        //$news = $line['new'];
+                        ?>
+                        <!-- <div class="container pt-3 pb-3">
+                                <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                                    <a href="news/business/new1.php" class="text-decoration-none text-reset">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php //echo $imgs; 
+                                                                                                                                            ?>" alt="">
+                                            </div>
+                                            <div class="col bg-light rounded">
+                                                <div class="container mx-auto d-block">
+                                                    <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                        <p class="text-white font-weight-bold text-uppercase"><?php //echo $titles; 
+                                                                                                                ?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row h-75 text-justify">
+                                                        <p><?php //echo $news; 
+                                                            ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                        <?php //} 
+                        ?>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="business/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/imagem_materia.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Publicadas leis que abrem crédito para empresas e ações contra covid-19</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Aprovadas na quinta-feira (1°), as Medidas Provisórias (MP) 976/2020 e MP 977/2020 viraram leis. A primeira (Lei 14.067) abriu crédito extraordinário de R$ 4,489 bilhões ao Ministério da Saúde para ações de combate à pandemia de coronavírus e a segunda (Lei 14.068) abriu crédito extraordinário de R$ 20 bilhões para a União conceder garantia a empréstimos feitos pelos bancos a empresas, iniciativa tomada também em razão da crise sanitária. Promulgadas pelo presidente do Congresso, Davi Alcolumbre, as duas estão publicadas na edição desta sexta-feira (2) do Diário Oficial da União.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -102,20 +144,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="business/new2.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/temas-de-interesse-da-cni_44308476691_o.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Impactos negativos da covid-19 nas empresas diminuíram em agosto</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Os impactos negativos da pandemia da covid-19 foram sentidos por 33,5% das 3,4 milhões de empresas brasileiras na segunda quinzena de agosto, contra 38,6% medidos no período anterior. Na primeira quinzena de junho, o efeito negativo foi sentido por 70% do total. Outras 37,9% tiveram impacto pequeno ou inexistente e 28,6% sentiram efeitos positivos com a crise sanitária na segunda quinzena de agosto. Os dados foram divulgados hoje pelo Instituto Brasileiro de Geografia e Estatística (IBGE), na Pesquisa Pulso Empresa: Impacto da Covid19 nas Empresas.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,20 +165,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="business/new3.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/27453369.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Dificuldade de acesso ao crédito por pequenas empresas é tema de audiência pública</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>A comissão mista do Congresso Nacional que fiscaliza as ações do governo no combate à pandemia de coronavírus realiza audiência pública remota, amanhã, para debater as dificuldades de acesso ao crédito por parte das micros e pequenas empresas e dos microempreendedores individuais, o que compromete a retomada do crescimento econômico. Entre os convidados estão Rosi Dedekind, presidente da Federação das Associações de Micro e Pequenas Empresas e dos Empreendedores Individuais de SC (Fampesc), e Adael dos Santos, presidente da Associação de Joinville e Região de Pequenas, Micro e Médias Empresas (Ajorpeme).</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,20 +186,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="business/new4.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/unnamed.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Como as empresas podem ajudar na luta contra a Covid-19?</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Meio sem acreditar a princípio, vimos a epidemia da Covid-19 chegar, se espalhar e tomar a proporção que tem hoje. Esta situação inusitada nos trouxe uma série de incertezas: Estamos achatando a curva? Quando teremos uma vacina disponível? De repente, a saúde assume um papel prioritário nas discussões e voltamos a lembrar de sua importância não apenas como indivíduos, mas como sociedade.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,20 +207,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="business/new5.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/imagem_materia2.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Comissão mista da covid-19 debate na terça dificuldades de microempresas</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>A comissão mista do Congresso Nacional que fiscaliza as ações do governo no combate à pandemia de coronavírus realiza nesta terça-feira (13), às 10h, audiência pública remota para debater as dificuldades de acesso ao crédito por parte das micros e pequenas empresas e dos microempreendedores individuais, o que compromete a retomada do crescimento econômico.</p>
                                             </div>
                                         </div>
                                     </div>

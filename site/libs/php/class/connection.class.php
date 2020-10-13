@@ -26,15 +26,15 @@ class Connection
     public function searchNews()
     {
         $sql = "SELECT * FROM news";
-        $result = $this->conn->query($sql) or die("Falha na consulta");
+		$result = $this->conn->query($sql)
+            or die("Falha na consulta");
 
-        if ($result == true) {
-            return $result;
-        } else {
-            die("Falha na consulta");
-        }
-
-        $this->conn->close();
+		if ($result == true) {
+			return $result;
+		} else {
+			die("Falha na consulta!");
+		}
+		$this->conn->close();
     }
 
     public function searchNewsAnimals()

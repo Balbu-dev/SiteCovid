@@ -1,3 +1,12 @@
+<?php
+
+require_once('../../php/class/connection.class.php');
+
+$connection = new Connection();
+
+$query = $connection->searchNewsPersonalFinances();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -60,7 +69,7 @@
                                 <a href="PersonalCares.php"><button class="btn btn-light">Cuidados Pessoais</button></a><span class="border border-top-0 border-left-0 border-bottom-0"></span>
                                 <a href="PersonalFinances.php"><button class="btn btn-light active">Finanças Pessoais</button></a>
                             </div>
-                            <form action="#" method="get">
+                            <!-- <form action="#" method="get">
                                 <div class="form-inline">
                                     <div class="form-inline ml-5">
                                         <select name="search-fpr" id="search-for" class="form-control mr-1">
@@ -76,115 +85,39 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="container pt-3 pb-3">
-                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
-                                    </div>
-                                    <div class="col bg-light rounded">
-                                        <div class="container mx-auto d-block">
-                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                        <?php while ($line = $query->fetch_assoc()) {
+                            $titles = $line['title'];
+                            $imgs = $line['img'];
+                            $news = $line['new'];
+                        ?>
+                            <div class="container pt-3 pb-3">
+                                <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                                    <a href="news/New.php" class="text-decoration-none text-reset">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php echo $imgs; ?>" alt="">
+                                            </div>
+                                            <div class="col bg-light rounded">
+                                                <div class="container mx-auto d-block">
+                                                    <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                        <p class="text-white font-weight-bold text-uppercase"><?php echo $titles; ?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row h-75 text-justify">
+                                                        <p><?php echo $news; ?></p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="container">
-                                            <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
-                                    </div>
-                                    <div class="col bg-light rounded">
-                                        <div class="container mx-auto d-block">
-                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
-                                            </div>
-                                        </div>
-                                        <div class="container">
-                                            <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
-                                    </div>
-                                    <div class="col bg-light rounded">
-                                        <div class="container mx-auto d-block">
-                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
-                                            </div>
-                                        </div>
-                                        <div class="container">
-                                            <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
-                                    </div>
-                                    <div class="col bg-light rounded">
-                                        <div class="container mx-auto d-block">
-                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
-                                            </div>
-                                        </div>
-                                        <div class="container">
-                                            <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
-                                    </div>
-                                    <div class="col bg-light rounded">
-                                        <div class="container mx-auto d-block">
-                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
-                                            </div>
-                                        </div>
-                                        <div class="container">
-                                            <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
