@@ -47,38 +47,47 @@
         <div class="container-fluid">
             <div class="container shadow pt-3 pb-3 mt-3 mb-3">
                 <div class="bg-secondary text-white pt-2 pb-2">
-                    <p class="font-weight-bold text-center align-middle display-4">Gatos contraem coronavírus e podem transmitir entre animais, aponta estudo<p>
+                    <p class="font-weight-bold text-center align-middle display-4">Finanças pessoais: lições da pandemia<p>
                 </div>
                 <div class="container">
                     <div class="container pt-3 pb-3">
                         <div class="container mb-3">
-                            <img src="../../../images/news/fotos-caes-e-gatos-1537878669005_v2_450x600.jpg" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo">
+                            <img src="../../../images/news/syringe-4966959-1920_170620201643.jpg" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo">
                         </div>
                         <div class="container">
                             <div class="row h-75 text-justify">
-                                <p>Um estudo divulgado ontem na renomada publicação New England Journal of Medicine confirma a suspeita de que o novo coronavírus é capaz de infectar gatos e que, provavelmente, os animais transmitam a covid-19 entre eles.</p>
-                                <p>O estudo, porém, diz que não é para tomar medidas contra animais porque não existem casos documentados de seres humanos que contraíram a doença por causa do contato com os gatos.</p>
-                                <p>A pesquisa foi desenvolvida por cientistas americanos e japoneses, que recomendam: mantenham seus gatos em ambientes fechados na quarentena para limitar seu contato com outras pessoas e animais.</p>
-                                <h2>Como foi o estudo?</h2>
-                                <p>Primeiro, os pesquisadores colocaram três gatos em gaiolas separadas e os expuseram a SARS-CoV-2 (o nome oficial do novo coronavírus).</p>
-                                <p>No dia seguinte, eles verificaram as narinas dos animais e detectaram o vírus em dois deles. Em três dias, o terceiro também estava contaminado.</p>
-                                <p>Para descobrirem se, além de contraírem o vírus, os gatos são capazes de transmiti-lo a outros animais, os cientistas colocaram um gato saudável, sem o vírus, em cada uma das gaiolas.</p>
-                                <p>Em dois dias, um desses gatos contraiu o vírus, e, em seis dias, todos eles estavam com o novo coronavírus.</p>
-                                <p>"Os gatos não apresentaram sintomas", afirmou Yoshihiro Kawaoka, o líder do estudo e professor da Escola de Medicina Veterinária da Universidade de Wisconsin (EUA).</p>
-                                <p>"Essa foi uma descoberta importante para nós", diz ele, que também ajuda a criar uma vacina humana contra a covid-19, chamada CoroFlu.</p>
-                                <p>"Os resultados sugerem que os gatos correm o risco de serem infectados pelo vírus quando expostos a pessoas ou outros gatos positivos para SARS-CoV-2", conclui o estudo.</p>
-                                <h2>Gatos na quarentena</h2>
-                                <p>O professor Peter Halfmann, que ajudou nas pesquisas, diz que o estudo serviu para que "as pessoas tenham uma coisa em mente": "Se eles estão em quarentena em casa e preocupados em passar a covid-19 para filhos e cônjuges, eles também devem se preocupar em resguardar seus animais."</p>
-                                <p>Eles aconselham que pessoas com sintomas evitem o contato com gatos e mantenham os animais em ambientes fechados, a fim de limitar o contato com outras pessoas e bichos.</p>
-                                <p>Kawaoka diz, no entanto, que "não há justificativa para tomar medidas contra animais" porque não existem casos documentados de seres humanos que contraíram covid-19 por causa do contato com os gatos.</p>
-                                <p>"Os gatos ainda têm muito mais chances de se infectar de um humano do que de um gato", diz Keith Poulsen, diretor do Laboratório de Diagnóstico Veterinário de Wisconsin.</p>
-                                <p>Ruthanne Chun, reitora de assuntos clínicos da UW Veterinary Care, oferece os seguintes conselhos:</p>
-                                <ul>
-                                    <li>Se o seu animal de estimação mora dentro de casa com você e não está em contato com nenhum indivíduo positivo do covid-19, é seguro abraçar e interagir com ele.</li>
-                                    <li>Se o seu resultado deu positivo, é melhor limitar as interações com seus animais de estimação para protegê-los da exposição ao vírus.</li>
-                                </ul>
-                                <p>"Os donos devem incluir os animais de estimação em seu planejamento de preparação para emergências, incluindo manter à mão um suprimento de duas semanas de alimentos e medicamentos", diz ela.</p>
-                                <p>"Também devem ser feitos preparativos para o cuidado de animais caso você precise ficar em quarentena ou ir para o hospital por causa da doença."</p>
+                                <p>Paul B. Brown (The New York Times) – Quando a gente passa semanas confinado em casa, tem bastante tempo para pensar. Eu pensei sobretudo em cuidar da saúde e da segurança dos meus amigos e da minha família. Mas logo me peguei pensando obsessivamente na minha vida financeira. Assim como muita gente, eu estava diante de um problemão.</p>
+                                <p>Sou jornalista e escritor autônomo, e boa parte da minha renda desapareceu literalmente de um dia para o outro. A mesma situação atingiu dezenas de milhões de pessoas cujo contracheque simplesmente sumiu. Muitas conseguiram receber o auxílio do governo, mas eu não estava nesse grupo.</p>
+                                <p>Como segui os conselhos financeiros que eu mesmo cobri por dever profissional durante anos, minha situação não era das piores. Eu tinha uma reserva para emergências, e uma fatia considerável dos meus investimentos – cerca de 35% – estava em fundos mútuos de títulos de médio prazo.</p>
+                                <p>Agora que as coisas começam a voltar ao normal (bem devagar), meu objetivo é aprender com esta crise e fazer ajustes importantes na gestão do meu dinheiro. A seguir, conto um pouco sobre as três coisas que vão mudar.</p>
+                                <h2>Vou tentar ter ainda mais dinheiro à mão</h2>
+                                <p>Uma das lições básicas de educação financeira sugere que é preciso ter o equivalente a pelo menos três meses de gastos correntes guardados numa aplicação líquida e super segura, “só para garantir”. Isso sempre fez sentido para mim, muito antes do coronavírus.</p>
+                                <p>No entanto, nunca prestei atenção ao dinheiro que eu esporadicamente colocava no fundo de emergência. Eu nem sabia ao certo quanto estava guardado ali. Felizmente, no momento em que o telefone parou de tocar e as pessoas que poderiam me dar trabalho deixaram de responder aos meus e-mails, eu tinha mais de quatro meses de despesas domésticas à mão.</p>
+                                <p>Isso ajudou muito.</p>
+                                <p>Ajudou tanto que minha meta agora é ter reservas suficientes para conseguir me virar durante um ano. (Vai demorar para chegar lá, eu sei.) A ideia é mais garantir minha paz de espírito do que aumentar meu patrimônio líquido.</p>
+                                <p>Tudo bem, eu sei que meu dinheiro renderia mais se estivesse aplicado em outra coisa – e não no fundo genérico e isento de imposto de renda onde está agora. Mas, no que depender de mim, nunca mais quero perder o sono por não saber se vou conseguir pagar as contas do mês. E, caso aconteça de eu passar mais de um ano praticamente sem receita, talvez seja hora de mudar de ramo – ou de me aposentar.</p>
+                                <h2>Vou administrar minhas dívidas de forma mais agressiva</h2>
+                                <p>Sempre paguei a conta integral do cartão de crédito, todos os meses. Por isso, nunca fiquei em dívida com o cartão – nem nos tempos em que as taxas de juros eram dedutíveis nos Estados Unidos (a Reforma Tributária de 1986 acabou com essa história).</p>
+                                <p>Mesmo assim, tenho três financiamentos: dois relativos à casa em Nova Jersey onde moro com minha família (um financiamento imobiliário normal, que contraí para comprar a casa, e outro posterior, sobre o valor ainda devido), e um terceiro para nossa casinha de veraneio em Cape Cod. Somados, eles representam uma quantia considerável, e pensei bastante sobre isso durante a quarentena.</p>
+                                <p>Quando minha renda entrava de forma regular, eu sempre pagava mais do que o valor das prestações mensais, em todos os três financiamentos. Na minha cabeça, esses pagamentos antecipados eram uma espécie de poupança forçada. Mas eu não fazia isso de forma estratégica: pagava valores aleatórios, arredondando para cima a parcela devida. Um exemplo: se o valor a pagar fosse US$ 3.772,16, eu ia lá e fazia um cheque de US$ 4.000,00 – e a quantia sobressalente servia para abater o principal, e não os juros da dívida. O mesmo raciocínio se aplicava aos três empréstimos.</p>
+                                <p>No entanto, cada um tem taxas de juros diferentes. A partir de agora, vou concentrar os pagamentos adicionais no financiamento que cobra juros mais altos – o segundo empréstimo da casa de Nova Jersey. É o que faz sentido do ponto de vista financeiro (desde que minhas entradas sejam suficientes para fazer os pagamentos adicionais, é claro).</p>
+                                <h2>Planejar o que vou fazer com minha aposentadoria</h2>
+                                <p>Antes da pandemia eu quase nunca pensava no dinheiro da aposentadoria. Lembro de jogar golfe com um amigo no dia em que completei 62 anos (lá se vão quase quatro anos), e ele me disse: “parabéns, você já pode receber o benefício do governo”.</p>
+                                <p>Ao chegar em casa, entrei no site oficial da previdência. Descobri que, se eu solicitasse o benefício imediatamente, receberia apenas 75% do que teria direito se esperasse até os 66 – a “idade completa para a aposentadoria”.</p>
+                                <p>E então eu não solicitei. Não havia necessidade: eu não estava precisando e não gostei nem um pouco da ideia de abrir mão de 25% do meu direito. Fechei o site e esqueci o assunto. Porém, durante o período de isolamento eu percebi que aquele dinheiro teria caído bem, e fiquei curioso para saber quanto eu tinha a receber.</p>
+                                <p>Bom, se eu conseguir esperar até os 66 – falta pouco –, vou receber uns US$ 3.000,00 por mês, segundo a calculadora do site do governo.</p>
+                                <p>E o melhor: o valor do benefício aumenta 0,66% a cada mês adicional que eu deixar passar, caso decida não solicitar o benefício aos 66 anos. Ora, 0,66% por mês é igual a 8% ao ano. (Em abril, o New York Times publicou um ótimo artigo de Mark Miller sobre o assunto, com o título “O que você precisa saber antes de solicitar a aposentadoria durante a pandemia”.)</p>
+                                <p>O fato é que os US$ 3.000,00 mensais que eu receberia se solicitasse a aposentadoria hoje não são suficientes para pagar minhas contas – nem mesmo os US$ 4.000,00 que entrariam todo o mês se eu esperasse até completar 70 (depois dessa idade, o benefício para de aumentar).</p>
+                                <p>Mas todo esse processo me levou a um raciocínio interessante.</p>
+                                <p>Vamos supor que eu pare de trabalhar no dia do meu 67º aniversário, daqui a pouco mais de um ano. Nesse caso, o cheque da previdência seria de US$ 3.143,00 por mês. Por outro lado, se eu comprar um seguro-aposentadoria de efeito imediato no valor total de US$ 500.000,00, a seguradora me pagaria US$ 2.612,00 por mês – conforme uma projeção do site independente ImmediateAnnuities.com, baseada nas taxas de juros atuais.</p>
+                                <p>Somados, os dois benefícios representam US$ 5.755,00 por mês – ou US$ 69.000,00 por ano. Isso sim seria suficiente para cobrir minhas despesas básicas e também parte da casa de Cape Cod, onde pretendo me aposentar. E até sobraria um pouquinho da minha poupança para a velhice – que, se tudo der certo, pode engordar se aplicada em ações ou títulos.</p>
+                                <p>No entanto, se eu esperar até os 70 para receber da previdência, a situação fica mais confortável ainda. Nesse caso, o valor do benefício sobe para US$ 4.000,00 por mês. E, se eu contratar aos 66 anos o mesmo seguro-aposentadoria no valor total de US$ 500.000,00, mas optar por começar a receber os cheques só aos 70 anos, o valor mensal pula para US$ 3.400,00 – num total de US$ 89.000,00 ao ano.</p>
+                                <p>Conclusão: vou continuar brincando de somar os possíveis valores da minha aposentadoria do governo a outros tipos de benefício, para ver o que faz mais sentido.</p>
+                                <h2>Preciso poupar mais</h2>
+                                <p>Ninguém contrata um seguro na esperança de um dia precisar usá-lo. A gente faz isso para se proteger da possibilidade de um dia enfrentar uma situação ruim na vida.</p>
+                                <p>Para mim, o raciocínio por trás de ter uma poupança sempre foi mais ou menos o mesmo. Embora eu goste da ideia de gastar esse dinheiro em algo mais prazeroso, também posso afirmar que já tenho tudo o que realmente importa.</p>
+                                <p>Mas, durante a pandemia, eu me dei conta de que não sei exatamente quanto preciso economizar para proteger minha família e manter intacto nosso confortável padrão de classe média – agora e no futuro.</p>
+                                <p>A crise complicou a vida de muita gente. Mas, no meu caso, serviu para aumentar minha determinação de organizar as finanças pessoais.</p>
                             </div>
                         </div>
                     </div>

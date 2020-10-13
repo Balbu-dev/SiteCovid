@@ -1,10 +1,10 @@
 <?php
 
-require_once('../../php/class/connection.class.php');
+//require_once('../../php/class/connection.class.php');
 
-$connection = new Connection();
+//$connection = new Connection();
 
-$query = $connection->searchNewsPersonalFinances();
+//$query = $connection->searchNewsPersonalFinances();
 ?>
 
 <!DOCTYPE html>
@@ -89,35 +89,144 @@ $query = $connection->searchNewsPersonalFinances();
                         </div>
                     </div>
                     <div class="container pt-3 pb-3">
-                        <?php while ($line = $query->fetch_assoc()) {
-                            $titles = $line['title'];
-                            $imgs = $line['img'];
-                            $news = $line['new'];
+                        <?php //while ($line = $query->fetch_assoc()) {
+                        //$titles = $line['title'];
+                        //$imgs = $line['img'];
+                        //$news = $line['new'];
                         ?>
-                            <div class="container pt-3 pb-3">
+                        <!-- <div class="container pt-3 pb-3">
                                 <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
                                     <a href="news/New.php" class="text-decoration-none text-reset">
                                         <div class="row">
                                             <div class="col-3">
-                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php echo $imgs; ?>" alt="">
+                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php //echo $imgs; 
+                                                                                                                                            ?>" alt="">
                                             </div>
                                             <div class="col bg-light rounded">
                                                 <div class="container mx-auto d-block">
                                                     <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                        <p class="text-white font-weight-bold text-uppercase"><?php echo $titles; ?></p>
+                                                        <p class="text-white font-weight-bold text-uppercase"><?php //echo $titles; 
+                                                                                                                ?></p>
                                                     </div>
                                                 </div>
                                                 <div class="container">
                                                     <div class="row h-75 text-justify">
-                                                        <p><?php echo $news; ?></p>
+                                                        <p><?php //echo $news; 
+                                                            ?></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                        <?php } ?>
+                            </div> -->
+                        <?php //} 
+                        ?>
+                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                            <a href="personalfinances/new1.php" class="text-decoration-none text-reset">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/cofre-e-dinheiro-rentabilidade-da-poupanca-esta-cada-vez-mais-baixa-168804-article.jpg" alt="">
+                                    </div>
+                                    <div class="col bg-light rounded">
+                                        <div class="container mx-auto d-block">
+                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Como controlar as finanças pessoais na crise de Covid-19?</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row h-75 text-justify">
+                                                <p> O surto do novo coronavírus (Covid-19) revelou-se um inimigo complexo, com impacto significativo nos rendimentos e condições de vida de muitas pessoas. Trata-se de uma pandemia que assusta, assola e ainda provocará muitos danos nas economias do mundo todo — e já se mostra capaz de enfraquecer alguns dos países mais ricos por conta da necessidade do isolamento ou distanciamento social.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                            <a href="personalfinances/new2.php" class="text-decoration-none text-reset">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/noticia_549509_img1_economia-reproducao-abr.jpg" alt="">
+                                    </div>
+                                    <div class="col bg-light rounded">
+                                        <div class="container mx-auto d-block">
+                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Covid-19: seis aplicativos para te ajudar com as finanças pessoais em tempos de crise</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row h-75 text-justify">
+                                                <p>O cenário de pandemia em torno do novo coronavírus, provocou uma severa crise na economia em todo o mundo. A pesquisa da Confederação Nacional da Indústria (CNI) mostra que, do total de entrevistados, 23% perderam totalmente a renda e 17% tiveram redução no ganho mensal.Para diminuir os prejuízos financeiros neste período, alguns aplicativos e plataformas podem ajudar. Além de apps para o planejamento, o mercado tem disponível ferramentas que ajudam até a ganhar mais dinheiro, com investimentos, cashback e economia na comparação de valores entre produtos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                            <a href="personalfinances/new3.php" class="text-decoration-none text-reset">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/syringe-4966959-1920_170620201643.jpg" alt="">
+                                    </div>
+                                    <div class="col bg-light rounded">
+                                        <div class="container mx-auto d-block">
+                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Finanças pessoais: lições da pandemia</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row h-75 text-justify">
+                                                <p>Paul B. Brown (The New York Times) – Quando a gente passa semanas confinado em casa, tem bastante tempo para pensar. Eu pensei sobretudo em cuidar da saúde e da segurança dos meus amigos e da minha família. Mas logo me peguei pensando obsessivamente na minha vida financeira. Assim como muita gente, eu estava diante de um problemão.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                            <a href="personalfinances/new4.php" class="text-decoration-none text-reset">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/Captura de tela 2020-10-13 120025.png" alt="">
+                                    </div>
+                                    <div class="col bg-light rounded">
+                                        <div class="container mx-auto d-block">
+                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                <p class="text-white font-weight-bold text-uppercase">Veja como minimizar o impacto da crise no bolso e proteger as finanças</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row h-75 text-justify">
+                                                <p>Estamos vivendo um período muito difícil em todos os países. Uma pandemia sem precedentes no mundo contemporâneo que mudou a forma que nos comportamos e como cuidamos dos nossos hábitos de higiene.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                            <a href="personalfinances/new5.php" class="text-decoration-none text-reset">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/financas-pessoais-coronavirus-1024x512.jpeg" alt="">
+                                    </div>
+                                    <div class="col bg-light rounded">
+                                        <div class="container mx-auto d-block">
+                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Como lidar com as finanças diante da pandemia do Coronavírus</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row h-75 text-justify">
+                                                <p>Coronavírus, reformas econômicas, a alta do dólar. Um sentimento de insegurança paira no ar. Como ter boas práticas e conseguir se organizar financeiramente?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
