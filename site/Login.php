@@ -15,7 +15,7 @@
     <header>
         <div class="container-fluid bg-primary text-white shadow">
             <div class="container">
-                <a href="index.php"><img src="libs/images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="index.php"><img src="libs/images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -50,7 +50,7 @@
                     <p class="font-weight-bold text-center align-middle display-4">Login</p>
                 </div>
                 <div class="container mt-5">
-                    <form action="" method="get">
+                    <form action="logon.php" method="get">
                         <div class="form-group">
                             <div class="form-inline row ml-3 mb-2">
                                 <label for="user" class="col justify-content-end"">Usuário:</label>

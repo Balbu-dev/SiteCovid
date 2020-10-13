@@ -1,3 +1,11 @@
+<?php
+
+//require_once('../php/class/connection.class.php');
+
+//$connection = new Connection();
+
+//$query = $connection->searchNews();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,7 +23,7 @@
     <header>
         <div class="container-fluid bg-primary text-white shadow">
             <div class="container">
-                <a href="../../index.php"><img src="../images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="../../index.php"><img src="../images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -63,10 +71,10 @@
                             <form action="#" method="get">
                                 <div class="form-inline">
                                     <div class="form-inline ml-5">
-                                        <select name="search-fpr" id="search-for" class="form-control mr-1">
+                                        <!-- <select name="search-fpr" id="search-for" class="form-control mr-1">
                                             <option value="newest">Mais recentes</option>
                                             <option value="oldest">Mais antigas</option>
-                                        </select>
+                                        </select> -->
                                         <button class="btn btn-light ml-1 border rounded-lg" type="submit">
                                             <i class="fa fa-search" aria-hidden="false">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -79,22 +87,55 @@
                             </form>
                         </div>
                     </div>
+                    <?php //while ($line = $query->fetch_assoc()) {
+                    //$titles = $line['title'];
+                    //$imgs = $line['img'];
+                    //$news = $line['new'];
+                    ?>
+                    <!-- <div class="container pt-3 pb-3">
+                            <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                                <a href="news/New.php" class="text-decoration-none text-reset">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src='../images/news/<?php //echo $imgs; 
+                                                                                                                                    ?>' alt="">
+                                        </div>
+                                        <div class="col bg-light rounded">
+                                            <div class="container mx-auto d-block">
+                                                <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                    <p class="text-white font-weight-bold text-uppercase"><?php //echo $titles; 
+                                                                                                            ?></p>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row h-75 text-justify">
+                                                    <p><?php //echo $news; 
+                                                        ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                    <?php // } 
+                    ?>
                     <div class="container pt-3 pb-3">
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="news/animals/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../images/news/20200724180507491762a.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Coronavírus em animais domésticos: entenda se há risco</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Após o episódio em que um cão de nove anos foi sacrificado na Carolina do Sul por apresentar diagnóstico de coronavírus, o tema “COVID-19 em animais domésticos” têm sido bastante discutido. Entre outros questionamentos, pessoas têm dúvidas se os pets podem transmitir a doença para humanos, se qualquer animal doméstico é capaz de contraí-la e se os donos devem tomar cuidados com seus animais durante a quarentena.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -102,20 +143,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="news/business/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../images/news/20200724180507491762a.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Coronavírus em animais domésticos: entenda se há risco</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Após o episódio em que um cão de nove anos foi sacrificado na Carolina do Sul por apresentar diagnóstico de coronavírus, o tema “COVID-19 em animais domésticos” têm sido bastante discutido. Entre outros questionamentos, pessoas têm dúvidas se os pets podem transmitir a doença para humanos, se qualquer animal doméstico é capaz de contraí-la e se os donos devem tomar cuidados com seus animais durante a quarentena.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,20 +164,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="news/education/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../images/news/20200724180507491762a.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Coronavírus em animais domésticos: entenda se há risco</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Após o episódio em que um cão de nove anos foi sacrificado na Carolina do Sul por apresentar diagnóstico de coronavírus, o tema “COVID-19 em animais domésticos” têm sido bastante discutido. Entre outros questionamentos, pessoas têm dúvidas se os pets podem transmitir a doença para humanos, se qualquer animal doméstico é capaz de contraí-la e se os donos devem tomar cuidados com seus animais durante a quarentena.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,20 +185,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="news/healthfood/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../images/news/20200724180507491762a.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Coronavírus em animais domésticos: entenda se há risco</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Após o episódio em que um cão de nove anos foi sacrificado na Carolina do Sul por apresentar diagnóstico de coronavírus, o tema “COVID-19 em animais domésticos” têm sido bastante discutido. Entre outros questionamentos, pessoas têm dúvidas se os pets podem transmitir a doença para humanos, se qualquer animal doméstico é capaz de contraí-la e se os donos devem tomar cuidados com seus animais durante a quarentena.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,20 +206,41 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="news/personalcares/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../images/news/20200724180507491762a.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Coronavírus em animais domésticos: entenda se há risco</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Após o episódio em que um cão de nove anos foi sacrificado na Carolina do Sul por apresentar diagnóstico de coronavírus, o tema “COVID-19 em animais domésticos” têm sido bastante discutido. Entre outros questionamentos, pessoas têm dúvidas se os pets podem transmitir a doença para humanos, se qualquer animal doméstico é capaz de contraí-la e se os donos devem tomar cuidados com seus animais durante a quarentena.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                            <a href="news/personalfinances/new1.php" class="text-decoration-none text-reset">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../images/news/20200724180507491762a.jpg" alt="">
+                                    </div>
+                                    <div class="col bg-light rounded">
+                                        <div class="container mx-auto d-block">
+                                            <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                <p class="text-white font-weight-bold text-uppercase">Coronavírus em animais domésticos: entenda se há risco</p>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row h-75 text-justify">
+                                                <p>Após o episódio em que um cão de nove anos foi sacrificado na Carolina do Sul por apresentar diagnóstico de coronavírus, o tema “COVID-19 em animais domésticos” têm sido bastante discutido. Entre outros questionamentos, pessoas têm dúvidas se os pets podem transmitir a doença para humanos, se qualquer animal doméstico é capaz de contraí-la e se os donos devem tomar cuidados com seus animais durante a quarentena.</p>
                                             </div>
                                         </div>
                                     </div>

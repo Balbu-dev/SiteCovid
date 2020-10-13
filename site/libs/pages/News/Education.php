@@ -1,3 +1,12 @@
+<?php
+
+//require_once('../../php/class/connection.class.php');
+
+//$connection = new Connection();
+
+//$query = $connection->searchNewsEducation();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,7 +24,7 @@
     <header>
         <div class="container-fluid bg-primary text-white shadow">
             <div class="container">
-                <a href="../../../index.php"><img src="../../images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="../../../index.php"><img src="../../images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -60,7 +69,7 @@
                                 <a href="PersonalCares.php"><button class="btn btn-light">Cuidados Pessoais</button></a><span class="border border-top-0 border-left-0 border-bottom-0"></span>
                                 <a href="PersonalFinances.php"><button class="btn btn-light">Finanças Pessoais</button></a>
                             </div>
-                            <form action="#" method="get">
+                            <!-- <form action="#" method="get">
                                 <div class="form-inline">
                                     <div class="form-inline ml-5">
                                         <select name="search-fpr" id="search-for" class="form-control mr-1">
@@ -76,25 +85,58 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="container pt-3 pb-3">
+                        <?php //while ($line = $query->fetch_assoc()) {
+                        //$titles = $line['title'];
+                        //$imgs = $line['img'];
+                        //$news = $line['new'];
+                        ?>
+                        <!-- <div class="container pt-3 pb-3">
+                                <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                                    <a href="news/New.php" class="text-decoration-none text-reset">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php //echo $imgs; 
+                                                                                                                                            ?>" alt="">
+                                            </div>
+                                            <div class="col bg-light rounded">
+                                                <div class="container mx-auto d-block">
+                                                    <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                        <p class="text-white font-weight-bold text-uppercase"><?php //echo $titles; 
+                                                                                                                ?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row h-75 text-justify">
+                                                        <p><?php //echo $news; 
+                                                            ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                        <?php //} 
+                        ?>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="education/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/composition-creativity-desk-education-207756.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Contágio de Covid-19 em escolas do Rio acende alerta sobre protocolo da rede pública</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Na primeira semana em que escolas privadas retomaram aulas na capital fluminense, ao menos três colégios suspenderam turmas por causa de contágio de Covid-19 em alunos ou funcionários. Isso fez crescer o alerta sobre a rede público, principalmente a estadual, que anunciou, nesta sexta, o retorno das aulas para os jovens do 3º ano do Ensino Médio a partir do dia 19. Segundo especialistas, o surgimento de casos será natural, e o importante é não relaxar nas medidas de proteção. O governo estadual não terá um protocolo específico para o que fazer após um aluno ser contagiado, mas a orientação é de que a turma em questão tenha suas aulas suspensas.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -102,20 +144,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="education/new2.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/760204092019-Escola-Estadual-Chico-Anysio-8969-XL-1024x580.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Escolas Estaduais Poderão Retomar As Aulas Presenciais No Dia 19 Em Nilópolis</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Nesta sexta-feira (09), o governador em exercício, Cláudio Castro, e o secretário de Estado de Educação, Comte Bittencourt, anunciaram que o retorno das aulas presenciais na rede pública estadual está previsto para o dia 19 deste mês, somente para as turmas da 3ª série do Ensino Médio, nas modalidades regular e Educação de Jovens e Adultos (EJA – Fase IV). Os colégios localizados em municípios que não autorizaram a flexibilização das regras do isolamento social ou estiverem na classificação laranja de contágio deverão continuar com atividades exclusivamente remotas.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,20 +165,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="education/new3.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/WhatsApp-Image-2020-08-06-at-07.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Professora do DF contrai Covid-19 e pais questionam transparência de escola</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Pais de alunos de uma escola privada do Distrito Federal denunciam falta de transparência por parte da instituição em relação a um caso da Covid-19 dentro da unidade. Na segunda-feira (5/10), os responsáveis receberam um comunicado do Colégio Arvense sobre o afastamento de uma professora que estava “de atestado médico”, mas não foram informados que a docente suspeitava ter contraído o novo coronavírus. Apenas nesta sexta (9/10), após a profissional testar positivo, a escola enviou um novo aviso, confirmando a infecção da professora.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,20 +186,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="education/new4.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/maria_beatriz_araujo_pittaluga_niederauer.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Crianças relatam saudade de contato próximo com professores e colegas</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>A pequena Maria Beatriz Niederauer, 5 anos, teve que se adaptar a uma nova rotina, com aulas por vídeo, desde o início da pandemia de covid-19, em março deste ano. As idas à escola, com o encontro animado com os coleguinhas pela manhã, deram lugar às videoaulas e a novos hábitos para evitar a contaminação pelo novo coronavírus.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,20 +207,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="education/new5.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/676924da-5b06-4127-816b-6ab56f553d94.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Covid-19: decreto libera Bem Legal Escolar para estudantes da área da Saúde</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Prefeitura de Maceió publicou, nesta sexta-feira (9), a edição extraordinária do Decreto n° 8.975 e prorrogou as medidas de distanciamento social vigentes até o início da Fase Verde. Entre a determinações, está a autorização para a utilização, a venda de créditos e o recadastramento do Cartão Bem Legal Escolar para os estudantes de clínicas-escolas das Instituições de Ensino Superior (IES) e escolas técnicas situadas em Maceió, desde que as mesmas tenham retornado as suas atividades, que passa a valer a partir da próxima terça-feira (13).</p>
                                             </div>
                                         </div>
                                     </div>

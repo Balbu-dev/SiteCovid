@@ -1,3 +1,12 @@
+<?php
+
+//require_once('../../php/class/connection.class.php');
+
+//$connection = new Connection();
+
+//$query = $connection->searchNewsPersonalCares();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,7 +24,7 @@
     <header>
         <div class="container-fluid bg-primary text-white shadow">
             <div class="container">
-                <a href="../../../index.php"><img src="../../images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="../../../index.php"><img src="../../images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -60,7 +69,7 @@
                                 <a href="PersonalCares.php"><button class="btn btn-light active">Cuidados Pessoais</button></a><span class="border border-top-0 border-left-0 border-bottom-0"></span>
                                 <a href="PersonalFinances.php"><button class="btn btn-light">Finanças Pessoais</button></a>
                             </div>
-                            <form action="#" method="get">
+                            <!-- <form action="#" method="get">
                                 <div class="form-inline">
                                     <div class="form-inline ml-5">
                                         <select name="search-fpr" id="search-for" class="form-control mr-1">
@@ -76,25 +85,59 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="container pt-3 pb-3">
+                        <?php //while ($line = $query->fetch_assoc()) {
+                        //$titles = $line['title'];
+                        //$imgs = $line['img'];
+                        //$news = $line['new'];
+                        ?>
+                        <!-- <div class="container pt-3 pb-3">
+                                <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                                    <a href="news/New.php" class="text-decoration-none text-reset">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php //echo $imgs; 
+                                                                                                                                            ?>" alt="">
+                                            </div>
+                                            <div class="col bg-light rounded">
+                                                <div class="container mx-auto d-block">
+                                                    <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                        <p class="text-white font-weight-bold text-uppercase"><?php //echo $titles; 
+                                                                                                                ?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row h-75 text-justify">
+                                                        <p><?php //echo $news; 
+                                                            ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                        <?php //} 
+                        ?>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="personalcares/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/xPequenos-gestos-contra-o-coronavirus.jpg.pagespeed.ic.CKOkT8GJ85.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Saiba quais são os cuidados pessoais necessários para evitar o contágio pela</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Covid-19</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Ainda restam muitas dúvidas sobre os cuidados para evitar a contaminação pelo novo coronavírus, que causa a Covid-19. Embora as principais recomendações continuem sendo as do isolamento social, para quem pode ficar em casa, e da higienização constante das mãos, além do uso da máscara nas saídas essenciais, há outras medidas que ajudam a evitar a doença.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -102,20 +145,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="personalcares/new2.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/iStock-1209879833.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Higiene pessoal em tempos de Covid-19</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Quando se fala dos hábitos de higiene pessoal, logo vem à sua mente tomar banho ou escovar os dentes? Sem dúvida essas atitudes são importantes para a saúde, mas para afastar o risco de doenças, principalmente em tempos de pandemia da Covid-19, vale a pena incorporar alguns outros cuidados ao seu dia a dia.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,20 +166,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="personalcares/new3.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/hora-de-se-prevenir-1584128319601_v2_900x506.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Coronavírus: cuidados que você deve ter para se prevenir da covid-19</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>O número de casos de covid-19 cresce dia após dias no Brasil e, por isso, as pessoas estão cada vez mais preocupadas com os cuidados que devem tomar para se prevenir. Não é por menos. Afinal, o novo coronavírus tem a capacidade de se espalhar rapidamente e, na maioria das vezes, é transmitido quando o doente ainda não apresenta sintomas.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,20 +187,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="personalcares/new4.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/alcool-gel-risco-queimadura-660x372.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">HIGIENE PESSOAL E DOS AMBIENTES COMO FORMA DE PREVENÇÃO À COVID-19</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Estamos vivendo um período muito difícil em todos os países. Uma pandemia sem precedentes no mundo contemporâneo que mudou a forma que nos comportamos e como cuidamos dos nossos hábitos de higiene.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,20 +208,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="personalcares/new5.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/257756ee79d07c68d322e5cf0b6d0e6e_L.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Coronavírus (COVID-19): mudança de hábitos é essencial para evitar a disseminação do vírus</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>A Organização Mundial da Saúde (OMS) decretou nesta semana estado de pandemia em decorrência do coronavírus (COVID-19). O Hospital Pequeno Príncipe, ciente de seu papel de referência em atendimento pediátrico e na proteção de crianças e adolescentes, vem orientar a sociedade a adotar cuidados essenciais a fim de prevenir o risco de contágio ou transmissão de infecções respiratórias, incluindo o coronavírus (COVID-19). É muito importante que cada pessoa aja com responsabilidade, praticando o autocuidado, além de estender os cuidados aos meninos e meninas sob sua responsabilidade.</p>
                                             </div>
                                         </div>
                                     </div>

@@ -1,3 +1,12 @@
+<?php
+
+//require_once('../../php/class/connection.class.php');
+
+//$connection = new Connection();
+
+//$query = $connection->searchNewsHealthFood();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,7 +24,7 @@
     <header>
         <div class="container-fluid bg-primary text-white shadow">
             <div class="container">
-                <a href="../../../index.php"><img src="../../images/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
+                <a href="../../../index.php"><img src="../../images/logo/Logo.png" class="rounded mx-auto d-block img-fluid" alt="Saúde Logo" id="logo"></a>
             </div>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
@@ -60,7 +69,7 @@
                                 <a href="PersonalCares.php"><button class="btn btn-light">Cuidados Pessoais</button></a><span class="border border-top-0 border-left-0 border-bottom-0"></span>
                                 <a href="PersonalFinances.php"><button class="btn btn-light">Finanças Pessoais</button></a>
                             </div>
-                            <form action="#" method="get">
+                            <!-- <form action="#" method="get">
                                 <div class="form-inline">
                                     <div class="form-inline ml-5">
                                         <select name="search-fpr" id="search-for" class="form-control mr-1">
@@ -76,25 +85,58 @@
                                         </button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="container pt-3 pb-3">
+                        <?php //while ($line = $query->fetch_assoc()) {
+                        //$titles = $line['title'];
+                        //$imgs = $line['img'];
+                        //$news = $line['new'];
+                        ?>
+                        <!-- <div class="container pt-3 pb-3">
+                                <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
+                                    <a href="news/New.php" class="text-decoration-none text-reset">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/<?php //echo $imgs; 
+                                                                                                                                            ?>" alt="">
+                                            </div>
+                                            <div class="col bg-light rounded">
+                                                <div class="container mx-auto d-block">
+                                                    <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
+                                                        <p class="text-white font-weight-bold text-uppercase"><?php //echo $titles; 
+                                                                                                                ?></p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row h-75 text-justify">
+                                                        <p><?php //echo $news; 
+                                                            ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                        <?php //} 
+                        ?>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="healthfood/new1.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/pandemia-de-coronavirus-supermercados-amanhecem-lotados-em-vitoria-209185.jpeg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Pandemia de covid-19 ameaça segurança alimentar pelo mundo</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Durante anos, o Índice Global da Fome refletiu o progresso global na luta contra a fome. Mas o coronavírus ameaça desfazer essas conquistas, avalia a organização humanitária alemã Welthungerhilfe.Há cinco anos, a Organização das Nações Unidas (ONU) definiu como uma de suas metas erradicar a fome no mundo até 2030. Ou seja: todo ser humano, mesmo nos países mais pobres, deveria ter uma alimentação adequada. Mas e hoje, qual é a situação mundial? E será que estamos no caminho certo para atingir esse objetivo?</p>
                                             </div>
                                         </div>
                                     </div>
@@ -102,20 +144,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="healthfood/new2.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/APR_1979.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Doação, o alimento dos grupos socioassistenciais</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Na segunda reportagem da série sobre a rede de solidariedade alimentar em curso no DF, a Agência Brasília mostra como a iniciativa – baseada na integração de instituições públicas, com engajamento da sociedade civil – garante o funcionamento de grupos socioassistenciais por meio de compra ou doação de alimentos.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,20 +165,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="healthfood/new3.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/setores-da-secretaria-de-educacao-ocupam-o-2o-piso-do-mercado-municipal-de-jf.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-center text-uppercase">Covid-19: Prefeitura de Juiz de Fora alerta beneficiários sobre prestação de contas de vale-alimentação</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>A Prefeitura de Juiz de Fora, por meio da Secretaria Municipal de Educação, alerta aos pais e responsáveis pelos alunos da rede municipal de ensino sobre as prestações de contas do benefício do cartão vale-alimentação.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,20 +186,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="healthfood/new4.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/10424SB-Banco-de-alimentos-da-CEASA-7-1-696x266.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Estado passa a oferecer opção de Compra de Alimentos com Doação Simultânea</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>O Estado do Rio de Janeiro passou a ter legislação própria para o Programa de Aquisição de Alimentos (PAA) a partir da sanção da Lei 8987/2020. O PAA é um dos principais Programas de Segurança Alimentar, que já existe no governo federal desde 2003, e tem duas finalidades básicas: promover o acesso à alimentação e incentivar a agricultura familiar.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,20 +207,20 @@
                             </a>
                         </div>
                         <div class="container bg-primary pt-4 pr-4 pb-4 mb-3 rounded shadow">
-                            <a href="" class="text-decoration-none text-reset">
+                            <a href="healthfood/new5.php" class="text-decoration-none text-reset">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="rounded mx-auto d-bolck img-fluid" src="../../images/img_avatar1.png" alt="">
+                                        <img class="rounded mx-auto d-bolck img-fluid justify-align-middle" src="../../images/news/2out2014-1412268726443_615x300.jpg" alt="">
                                     </div>
                                     <div class="col bg-light rounded">
                                         <div class="container mx-auto d-block">
                                             <div class="row h-25 bg-dark rounded mt-2 mb-2 pt-3 pb-1 justify-content-center">
-                                                <p class="text-white font-weight-bold text-uppercase">Título da Notícia</p>
+                                                <p class="text-white font-weight-bold text-uppercase">Como funciona o banco de alimentos que ganhou o Nobel da Paz?</p>
                                             </div>
                                         </div>
                                         <div class="container">
                                             <div class="row h-75 text-justify">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam neque dolore explicabo, quae nobis deleniti facilis dicta aliquid, cupiditate velit beatae? Ipsum reiciendis veritatis quaerat eos. Hic, doloribus earum!</p>
+                                                <p>Os números chamam atenção. 97 milhões de pessoas atendidas em 88 países. Em média, 5.600 caminhões, 30 navios e quase 100 aviões estão na ativa diariamente, entregando alimentos e outros tipos de assistência a quem precisa. Todo esse esforço tem um objetivo: acabar com a fome e alcançar a segurança alimentar até 2030.</p>
                                             </div>
                                         </div>
                                     </div>
